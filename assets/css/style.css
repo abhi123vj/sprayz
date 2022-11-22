@@ -71,8 +71,8 @@ header {
   }
   
   /* selected link */
-.login-data li  a:active {
-    color: blue;
+.login-data li  a:any-link {
+    color: #4c4c4c;
   }
 .main-banner {
   width: 100%;
