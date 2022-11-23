@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Sprayz website" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Abhiram" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/form_style.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Sprayz Form</title>
+  </head>
+  <body>
+    <main>
+      <section class="main-section">
+        <h4>Billing address</h4>
+        <form action="#">
+          <div class="row-two-fields">
+            <div class="fields">
+              <label for="fullName">Full Name</label>
+              <input type="text" name="fullName" id="fullName" />
+            </div>
+
+            <div class="fields">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" />
+            </div>
+          </div>
+          <div class="fields">
+            <label for="userName">User Name</label>
+            <input type="text" name="userName" id="userName" />
+          </div>
+
+          <div class="fields">
+            <label for="userEmail">Email</label>
+            <input type="email" name="userEmail" id="userEmail" />
+          </div>
+          <div class="fields">
+            <label for="userAddress">Address</label>
+            <input type="text" name="userAddress" id="userAddress" />
+          </div>
+          <div class="fields">
+            <label for="userAddress2">Address 2</label>
+            <input type="text" name="userAddress2" id="userAddress2" />
+          </div>
+
+          <div class="row-three-fields">         
+            <div class="fields">
+              <label for="userCountry">Country</label>
+              <button class="dropdown">
+                Country <img src="../assets/svg/dropdown_icon.svg" alt="" />
+              </button>
+              <div class="dropdown-menu">Dropdown Content</div>
+            </div>
+
+            <div class="fields">
+              <label for="userCountry">Country </label>
+              <button class="dropdown">State <img src="../assets/svg/dropdown_icon.svg" alt="" /></button>
+              <div class="dropdown-menu">Dropdown Content</div>
+            </div>
+
+            <div class="fields">
+              <label for="userZip">Zip</label>
+              <input type="text" name="userZip" id="userZip" />
+            </div>
+          </div>
+          <hr class="rounded" />
+          <div>
+            <label class="check-box">Shipping address is the same as my billing address
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <label class="check-box">Save this information for next time
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <hr class="rounded" />
+          <h4>Payment</h4>
+          <div class="payment">
+            <label class="check-box">Credit Card
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <label class="check-box">Debit Card
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <label class="check-box">PayPal
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>           
+          </div>
+          <div class="row-two-fields">
+            <div class="fields">
+              <label for="fullName">Name on Card</label>
+              <input type="text" name="fullName" id="fullName" />
+              <span class="fullname">Full name as displayed on card</span>
+
+            </div>
+
+            <div class="fields">
+              <label for="lastName">Credit card number</label>
+              <input type="text" name="lastName" id="lastName" />
+            </div>
+          </div>
+          <div class="row-four-field">
+            <div class="fields">
+              <label for="fullName">Expiration</label>
+              <input type="text" name="fullName" id="fullName" />
+             
+            </div>
+
+            <div class="fields">
+              <label for="lastName">CVV</label>
+              <input type="text" name="lastName" id="lastName" />
+            </div>
+          </div>
+          <hr class="rounded" />
+          <button type="button" class="checkout">Continue to checkout</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
