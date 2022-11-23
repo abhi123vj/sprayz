@@ -59,19 +59,34 @@
             <input type="text" name="userAddress2" id="userAddress2" />
           </div>
 
-          <div class="row-three-fields">         
-            <div class="fields">
+          <div class="row-three-fields">
+            <div class="fields country">
               <label for="userCountry">Country</label>
               <button class="dropdown">
-                Country <img src="../assets/svg/dropdown_icon.svg" alt="" />
+                Choose.. <img src="../assets/svg/dropdown_icon.svg" alt="" />
               </button>
-              <div class="dropdown-menu">Dropdown Content</div>
+              <div class="dropdown-menu">
+                <ul>
+                  <li>Canada</li>
+                  <li>India</li>
+                  <li>Mexico</li>
+                </ul>
+               
+              </div>
             </div>
 
-            <div class="fields">
-              <label for="userCountry">Country </label>
-              <button class="dropdown">State <img src="../assets/svg/dropdown_icon.svg" alt="" /></button>
-              <div class="dropdown-menu">Dropdown Content</div>
+            <div class="fields country">
+              <label for="userCountry">State </label>
+              <button class="dropdown">
+                Choose.. <img src="../assets/svg/dropdown_icon.svg" alt="" />
+              </button>
+              <div class="dropdown-menu">
+                <ul>
+                  <li>Andhra Pradesh</li>
+                  <li>Arunachal Pradesh</li>
+                  <li>Assam</li>
+                </ul>
+              </div>
             </div>
 
             <div class="fields">
@@ -81,37 +96,58 @@
           </div>
           <hr class="rounded" />
           <div>
-            <label class="check-box">Shipping address is the same as my billing address
-              <input type="checkbox" checked="checked">
+            <label class="check-box"
+              >Shipping address is the same as my billing address
+              <input type="checkbox"  />
               <span class="checkmark"></span>
             </label>
-            <label class="check-box">Save this information for next time
-              <input type="checkbox" checked="checked">
+            <label class="check-box"
+              >Save this information for next time
+              <input type="checkbox"  />
               <span class="checkmark"></span>
             </label>
           </div>
           <hr class="rounded" />
           <h4>Payment</h4>
-          <div class="payment">
-            <label class="check-box">Credit Card
-              <input type="checkbox" checked="checked">
-              <span class="checkmark"></span>
+          <div class="radio-group">
+            <label for="radio-credit" class="radio">
+              <input
+                type="radio"
+                id="radio-credit"
+                name="drone"
+                class="radio__input"
+              />
+              <div class="radio__radio"></div>
+              Credit Card
             </label>
-            <label class="check-box">Debit Card
-              <input type="checkbox" checked="checked">
-              <span class="checkmark"></span>
+
+            <label for="radio-credit2" class="radio">
+              <input
+                type="radio"
+                id="radio-credit2"
+                name="drone"
+                class="radio__input"
+              />
+              <div class="radio__radio"></div>
+              Debit Card
             </label>
-            <label class="check-box">PayPal
-              <input type="checkbox" checked="checked">
-              <span class="checkmark"></span>
-            </label>           
+
+            <label for="radio-credit3" class="radio">
+              <input
+                type="radio"
+                id="radio-credit3"
+                name="drone"
+                class="radio__input"
+              />
+              <div class="radio__radio"></div>
+              Paypal
+            </label>
           </div>
           <div class="row-two-fields">
             <div class="fields">
               <label for="fullName">Name on Card</label>
               <input type="text" name="fullName" id="fullName" />
               <span class="fullname">Full name as displayed on card</span>
-
             </div>
 
             <div class="fields">
@@ -123,7 +159,6 @@
             <div class="fields">
               <label for="fullName">Expiration</label>
               <input type="text" name="fullName" id="fullName" />
-             
             </div>
 
             <div class="fields">
@@ -134,7 +169,10 @@
           <hr class="rounded" />
           <button type="button" class="checkout">Continue to checkout</button>
         </form>
+       
       </section>
     </main>
+    
+
   </body>
 </html>
